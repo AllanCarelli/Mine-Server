@@ -25,9 +25,8 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: sudo apt install python
+        run: sudo apt install python3
         
-      - run: y
 
       
 
