@@ -31,7 +31,10 @@ jobs:
 
       - run: pip install discord.py
 
-      - run: python3 bot.py
+      - env:
+          DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
+          ID: ${{ secrets.ID }}
+        run: python3 bot.py
         
 
       
