@@ -3,3 +3,5 @@ saves/
 resourcepacks/
 shaderpacks/
 *.bat
+.venv/
+bot.py
