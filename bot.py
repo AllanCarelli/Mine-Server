@@ -12,6 +12,8 @@ class MyClient(discord.Client):
         if canal:
             await canal.send(f"# 🟢 MOD ATUALIZADO \n [{datetime.datetime.now()}] Favor rodar o script para atualizar o modpack")
 
+        await client.close()
+
 intents = discord.Intents.default()
 intents.message_content = True
 
