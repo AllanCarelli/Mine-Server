@@ -5,7 +5,7 @@ import os
 
 class MyClient(discord.Client):
     async def on_ready(self):
-        ID = os.getenv("ID")
+        ID = int(os.getenv("ID"))
 
         canal = self.get_channel(ID)
         
@@ -16,4 +16,5 @@ intents = discord.Intents.default()
 intents.message_content = True
 
 client = MyClient(intents=intents)
+print(os.getenv("DISCORD_TOKEN"))
 client.run(os.getenv("DISCORD_TOKEN"))
